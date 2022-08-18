@@ -9,7 +9,6 @@ import UIKit
 
 class ClassifyViewController: UIViewController {
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,6 +21,10 @@ class ClassifyViewController: UIViewController {
         navigationItem.titleView = titleButton
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: nil, style: .plain, target: nil, action: nil)
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: nil, style: .plain, target: nil, action: nil)
+        
+        collectionView.snp.makeConstraints { make in
+            make.left.right.top.bottom.equalToSuperview()
+        }
     }
     
     @objc private func titleClick() {
@@ -41,7 +44,26 @@ class ClassifyViewController: UIViewController {
     }()
     
     lazy var collectionView: UICollectionView = {
-        let collectionView = UICollectionView()
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
+        collectionView.register(ClassifyItemCell.self, forCellWithReuseIdentifier: "ClassifyItemCell")
+        collectionView.dataSource = self
+        collectionView.delegate = self
+        view.addSubview(collectionView)
         return collectionView
     }()
+}
+
+extension ClassifyViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 20
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ClassifyItemCell", for: indexPath)
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 100, height: 100)
+    }
 }

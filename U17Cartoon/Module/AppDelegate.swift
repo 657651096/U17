@@ -30,6 +30,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         mineNaviVC.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "tab_mine")?.withRenderingMode(.alwaysOriginal), selectedImage: UIImage(named: "tab_mine_S")?.withRenderingMode(.alwaysOriginal))
 
         let tabBarVC = UITabBarController()
+        tabBarVC.tabBar.barTintColor = .white
+        tabBarVC.tabBar.isTranslucent = false
         tabBarVC.viewControllers = [homeNaviVC, classNaviVC, bookshelfNaviVC, mineNaviVC]
         
         window = UIWindow(frame: UIScreen.main.bounds)
