@@ -18,6 +18,7 @@
 		13B6E29A28ADE91E00596B0F /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B6E29928ADE91E00596B0F /* Global.swift */; };
 		13B6E29D28AE19EA00596B0F /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B6E29C28AE19EA00596B0F /* NSObject+Extension.swift */; };
 		13B6E29F28AE25C800596B0F /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B6E29E28AE25C800596B0F /* UIImage+Extension.swift */; };
+		13F0F86729CBED7A002F4AC1 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F0F86629CBED7A002F4AC1 /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		13B6E29C28AE19EA00596B0F /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
 		13B6E29E28AE25C800596B0F /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		13F0F85B29CBE45A002F4AC1 /* SnapKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SnapKit.xcodeproj; path = "../../../../Downloads/SnapKit-develop/SnapKit.xcodeproj"; sourceTree = "<group>"; };
+		13F0F86629CBED7A002F4AC1 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 		13B6E27528ACDDED00596B0F /* Classify */ = {
 			isa = PBXGroup;
 			children = (
+				13F0F86529CBED48002F4AC1 /* Search */,
 				13B6E27828ACE22000596B0F /* View */,
 				13B6E27628ACDE1C00596B0F /* ClassifyViewController.swift */,
 			);
@@ -193,6 +196,14 @@
 				13F0F86329CBE45A002F4AC1 /* SnapKit Tests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		13F0F86529CBED48002F4AC1 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				13F0F86629CBED7A002F4AC1 /* SearchViewController.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13F0F86729CBED7A002F4AC1 /* SearchViewController.swift in Sources */,
 				13B6E25D28ACD44100596B0F /* AppDelegate.swift in Sources */,
 				13B6E29528ADD67900596B0F /* BookshelfViewController.swift in Sources */,
 				13B6E27428ACD55500596B0F /* HomeViewController.swift in Sources */,

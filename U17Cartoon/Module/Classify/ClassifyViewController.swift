@@ -29,6 +29,8 @@ class ClassifyViewController: UIViewController {
     
     @objc private func titleClick() {
         print("-=-= ")
+        let searchVC = SearchViewController()
+        navigationController?.pushViewController(searchVC, animated: true)
     }
     
     private lazy var titleButton: UIButton = {
@@ -82,7 +84,7 @@ extension ClassifyViewController: UICollectionViewDataSource, UICollectionViewDe
         if scrollView.contentOffset.y > 1 {
             navigationController?.navigationBar.setBackgroundImage(UIImage(named: "nav_bg"), for: .default)
         } else {
-            navigationController?.navigationBar.setBackgroundImage(UIImage.imageWithColor(color: .white, size: CGSize(width: ScreenWidth, height: 44)), for: .default)
+            navigationController?.navigationBar.setBackgroundImage(UIImage.imageWithColor(color: .white, size: CGSize(width: ScreenWidth, height: 88)), for: .default)
         }
     }
 }
