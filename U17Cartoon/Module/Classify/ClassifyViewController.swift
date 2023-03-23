@@ -18,6 +18,8 @@ class ClassifyViewController: UIViewController {
     private func setupUI() {
         view.backgroundColor = .white
         
+        navigationController?.navigationBar.isTranslucent = true
+        
         navigationItem.titleView = titleButton
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: nil, style: .plain, target: nil, action: nil)
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: nil, style: .plain, target: nil, action: nil)
@@ -81,7 +83,7 @@ extension ClassifyViewController: UICollectionViewDataSource, UICollectionViewDe
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        if scrollView.contentOffset.y > 1 {
+        if scrollView.contentOffset.y > -88 {
             navigationController?.navigationBar.setBackgroundImage(UIImage(named: "nav_bg"), for: .default)
         } else {
             navigationController?.navigationBar.setBackgroundImage(UIImage.imageWithColor(color: .white, size: CGSize(width: ScreenWidth, height: 88)), for: .default)
