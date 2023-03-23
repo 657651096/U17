@@ -20,6 +20,9 @@ class ClassifyItemCell: UICollectionViewCell {
     }
     
     private func setupUI() {
+        contentView.backgroundColor = .lightGray
+        contentView.layer.cornerRadius = 5
+        
         imageView.snp.makeConstraints { make in
             make.left.right.top.equalToSuperview()
         }
@@ -29,6 +32,11 @@ class ClassifyItemCell: UICollectionViewCell {
             make.left.right.bottom.equalToSuperview()
             make.height.equalTo(20)
         }
+    }
+    
+    public func setModel() {
+        titleLabel.text = "都市"
+        imageView.image = UIImage.init(named: "category_icon_1")
     }
     
     lazy var titleLabel: UILabel = {
@@ -43,7 +51,6 @@ class ClassifyItemCell: UICollectionViewCell {
     lazy var imageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
-        imageView.backgroundColor = .red
         contentView.addSubview(imageView)
         return imageView
     }()

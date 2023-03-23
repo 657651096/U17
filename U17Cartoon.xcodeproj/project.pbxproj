@@ -12,25 +12,25 @@
 		13B6E26928ACD44200596B0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13B6E26728ACD44200596B0F /* LaunchScreen.storyboard */; };
 		13B6E27428ACD55500596B0F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B6E27328ACD55500596B0F /* HomeViewController.swift */; };
 		13B6E27728ACDE1C00596B0F /* ClassifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B6E27628ACDE1C00596B0F /* ClassifyViewController.swift */; };
-		13B6E28E28ACF0AA00596B0F /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13B6E28A28ACF07C00596B0F /* SnapKit.framework */; platformFilter = ios; };
-		13B6E28F28ACF0AA00596B0F /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 13B6E28A28ACF07C00596B0F /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		13B6E29228ADD57F00596B0F /* ClassifyItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B6E29128ADD57F00596B0F /* ClassifyItemCell.swift */; };
 		13B6E29528ADD67900596B0F /* BookshelfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B6E29428ADD67900596B0F /* BookshelfViewController.swift */; };
 		13B6E29828ADD74B00596B0F /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B6E29728ADD74B00596B0F /* MineViewController.swift */; };
 		13B6E29A28ADE91E00596B0F /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B6E29928ADE91E00596B0F /* Global.swift */; };
+		13B6E29D28AE19EA00596B0F /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B6E29C28AE19EA00596B0F /* NSObject+Extension.swift */; };
+		13B6E29F28AE25C800596B0F /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B6E29E28AE25C800596B0F /* UIImage+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		13B6E28928ACF07C00596B0F /* PBXContainerItemProxy */ = {
+		13F0F86029CBE45A002F4AC1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 13B6E28428ACF07C00596B0F /* SnapKit.xcodeproj */;
+			containerPortal = 13F0F85B29CBE45A002F4AC1 /* SnapKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = EEBCC9D819CC627D0083B827;
 			remoteInfo = SnapKit;
 		};
-		13B6E28B28ACF07C00596B0F /* PBXContainerItemProxy */ = {
+		13F0F86229CBE45A002F4AC1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 13B6E28428ACF07C00596B0F /* SnapKit.xcodeproj */;
+			containerPortal = 13F0F85B29CBE45A002F4AC1 /* SnapKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = EEBCC9E219CC627E0083B827;
 			remoteInfo = "SnapKit Tests";
@@ -44,7 +44,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				13B6E28F28ACF0AA00596B0F /* SnapKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,11 +58,13 @@
 		13B6E26A28ACD44200596B0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13B6E27328ACD55500596B0F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		13B6E27628ACDE1C00596B0F /* ClassifyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifyViewController.swift; sourceTree = "<group>"; };
-		13B6E28428ACF07C00596B0F /* SnapKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SnapKit.xcodeproj; path = "../../../../Downloads/SnapKit-develop/SnapKit.xcodeproj"; sourceTree = "<group>"; };
 		13B6E29128ADD57F00596B0F /* ClassifyItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifyItemCell.swift; sourceTree = "<group>"; };
 		13B6E29428ADD67900596B0F /* BookshelfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookshelfViewController.swift; sourceTree = "<group>"; };
 		13B6E29728ADD74B00596B0F /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		13B6E29928ADE91E00596B0F /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		13B6E29C28AE19EA00596B0F /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
+		13B6E29E28AE25C800596B0F /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		13F0F85B29CBE45A002F4AC1 /* SnapKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SnapKit.xcodeproj; path = "../../../../Downloads/SnapKit-develop/SnapKit.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +72,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13B6E28E28ACF0AA00596B0F /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +98,7 @@
 		13B6E25B28ACD44100596B0F /* U17Cartoon */ = {
 			isa = PBXGroup;
 			children = (
+				13B6E29B28AE19BA00596B0F /* Extension */,
 				13B6E27B28ACEBA400596B0F /* ThirdParty */,
 				13B6E27028ACD45600596B0F /* Module */,
 				13B6E26528ACD44200596B0F /* Assets.xcassets */,
@@ -147,19 +148,10 @@
 		13B6E27B28ACEBA400596B0F /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
-				13B6E28428ACF07C00596B0F /* SnapKit.xcodeproj */,
+				13F0F85B29CBE45A002F4AC1 /* SnapKit.xcodeproj */,
 				13B6E29928ADE91E00596B0F /* Global.swift */,
 			);
 			path = ThirdParty;
-			sourceTree = "<group>";
-		};
-		13B6E28528ACF07C00596B0F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				13B6E28A28ACF07C00596B0F /* SnapKit.framework */,
-				13B6E28C28ACF07C00596B0F /* SnapKit Tests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		13B6E28D28ACF0AA00596B0F /* Frameworks */ = {
@@ -183,6 +175,24 @@
 				13B6E29728ADD74B00596B0F /* MineViewController.swift */,
 			);
 			path = Mine;
+			sourceTree = "<group>";
+		};
+		13B6E29B28AE19BA00596B0F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				13B6E29C28AE19EA00596B0F /* NSObject+Extension.swift */,
+				13B6E29E28AE25C800596B0F /* UIImage+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		13F0F85C29CBE45A002F4AC1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13F0F86129CBE45A002F4AC1 /* SnapKit.framework */,
+				13F0F86329CBE45A002F4AC1 /* SnapKit Tests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,8 +244,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 13B6E28528ACF07C00596B0F /* Products */;
-					ProjectRef = 13B6E28428ACF07C00596B0F /* SnapKit.xcodeproj */;
+					ProductGroup = 13F0F85C29CBE45A002F4AC1 /* Products */;
+					ProjectRef = 13F0F85B29CBE45A002F4AC1 /* SnapKit.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -246,18 +256,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		13B6E28A28ACF07C00596B0F /* SnapKit.framework */ = {
+		13F0F86129CBE45A002F4AC1 /* SnapKit.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = SnapKit.framework;
-			remoteRef = 13B6E28928ACF07C00596B0F /* PBXContainerItemProxy */;
+			remoteRef = 13F0F86029CBE45A002F4AC1 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		13B6E28C28ACF07C00596B0F /* SnapKit Tests.xctest */ = {
+		13F0F86329CBE45A002F4AC1 /* SnapKit Tests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = "SnapKit Tests.xctest";
-			remoteRef = 13B6E28B28ACF07C00596B0F /* PBXContainerItemProxy */;
+			remoteRef = 13F0F86229CBE45A002F4AC1 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -282,6 +292,8 @@
 				13B6E25D28ACD44100596B0F /* AppDelegate.swift in Sources */,
 				13B6E29528ADD67900596B0F /* BookshelfViewController.swift in Sources */,
 				13B6E27428ACD55500596B0F /* HomeViewController.swift in Sources */,
+				13B6E29F28AE25C800596B0F /* UIImage+Extension.swift in Sources */,
+				13B6E29D28AE19EA00596B0F /* NSObject+Extension.swift in Sources */,
 				13B6E29228ADD57F00596B0F /* ClassifyItemCell.swift in Sources */,
 				13B6E27728ACDE1C00596B0F /* ClassifyViewController.swift in Sources */,
 				13B6E29828ADD74B00596B0F /* MineViewController.swift in Sources */,

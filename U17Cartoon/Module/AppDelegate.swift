@@ -31,6 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         let tabBarVC = UITabBarController()
         tabBarVC.tabBar.barTintColor = .white
+        tabBarVC.tabBar.backgroundColor = .white
         tabBarVC.tabBar.isTranslucent = false
         tabBarVC.viewControllers = [homeNaviVC, classNaviVC, bookshelfNaviVC, mineNaviVC]
         

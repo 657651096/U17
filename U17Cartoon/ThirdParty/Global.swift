@@ -6,5 +6,12 @@
 //
 
 import Foundation
+import UIKit
 
 import SnapKit
+
+let ScreenWidth = UIScreen.main.bounds.size.width
+let ScreenHeight = UIScreen.main.bounds.size.height
+
+let StatusBarHeight: CGFloat = 20
+let NavigationBarHeight: CGFloat = 44
